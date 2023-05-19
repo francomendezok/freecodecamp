@@ -1,0 +1,36 @@
+body {
+    display: flex;
+  }
+  
+  a {
+    color: grey;
+    text-decoration: none;
+  }
+  
+  #navbar {
+    height: 100%;
+  }
+  .nav-link {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+  }
+  
+  #main-doc {
+    padding-left: 30px;
+  }
+  
+  header {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .header-nav {
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+  
+    }
+  
+  
+    /* add a div and nest the <code> inside, so i can give it a grey background and border */
