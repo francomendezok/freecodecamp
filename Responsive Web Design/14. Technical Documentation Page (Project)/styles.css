@@ -1,33 +1,26 @@
 body {
-  display: flex;
+    display: flex;
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', Arial, sans-serif;
   }
 
-  
-.container {
-  display: flex;
-  position: fixed;
-  min-width: 20%;
-  height: 100vh;
-  border-right: 18px solid grey;
-}
   
   a {
     color: grey;
     text-decoration: none;
   }
+
   
   #navbar {
-    height: 100vh;
-    background-color: #f2f2f2;
-    width: 300px;
     position: fixed;
-    overflow-y: auto;
+    min-width: 290px;
     top: 0;
     left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid rgba(0,22,22,0.4);
   }
 
   .grey-list {
@@ -37,36 +30,50 @@ body {
   .grey-list::marker {
     color: grey;
   }
+
   .nav-link {
     display: block;
     padding: 15px;
+    padding-left: 30px;
     border-bottom: 2px solid grey;
-    border-right: 2px solid grey;
-    font-size: 20px;
-    font-weight: 400;
-    color: black;
+    font-size: 16px;
+    font-weight: 300;
+    color: #686868;
+  }
+
+  .nav-link:last-of-type {
+    height: 100vh;
   }
   
   #main-doc {
     display: flex;
     flex-direction: column;
-    padding-left: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-left: 400px;
+    margin: 30px 30px 20px 330px;
+  }
 
+  p, li {
+    font-size: 16px;
+    padding: 10px 0px 10px 0px;
+    color: #696969	;
   }
-  
+
+  p {
+    padding-left: 20px;
+  }
+
   header {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   
-  .header-nav {
-    border-bottom: 1px solid grey;
-    border-right: 1px solid grey;
-    padding: 20px 0 20px 60px;
-    }
+  .documentation {
+    color: black;
+    padding: 10px 0 10px 30px;
+    font-size: 24px;
+  }
+
 
     @media (prefers-reduced-motion: no-preference) {
       * {
@@ -75,14 +82,15 @@ body {
     }
   
     .code {
-      background-color: wheat;
+      background-color: #F0F0F0		;
       padding: 30px 0 30px 30px;
       border-radius: 10px;
-      font-size: 18px;
+      font-size: 14px;
       margin-top: 20px;
       margin-bottom: 20px;
       width: 80%;
       margin-left: 30px;
+      color: #696969;
     }
 
  .mdn {
@@ -91,15 +99,7 @@ body {
  }   
 
  @media (max-width: 767px) {
-  #navbar {
-    width: 100%;
-    height: 100vh;
-    /* fix bug about responsive design */
-  }
 
-  .container {
-    flex-direction: column; /* Stack the navigation and content vertically */
-  }
 }
  /* TO DO
  Make Nav Responsive
