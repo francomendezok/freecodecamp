@@ -1,56 +1,26 @@
+html,
 body {
-    display: flex;
+    min-width: 290px;
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Open Sans', Arial, sans-serif;
   }
 
-  
+ /* Decoration */
   a {
     color: grey;
     text-decoration: none;
   }
-
   
-  #navbar {
-    position: fixed;
-    min-width: 290px;
-    top: 0;
-    left: 0;
-    width: 300px;
-    height: 100%;
-    border-right: solid rgba(0,22,22,0.4);
-  }
-
   .grey-list {
     margin-left: 30px;
   }
-
+  
   .grey-list::marker {
     color: grey;
   }
-
-  .nav-link {
-    display: block;
-    padding: 15px;
-    padding-left: 30px;
-    border-bottom: 2px solid grey;
-    font-size: 16px;
-    font-weight: 300;
-    color: #686868;
-  }
-
-  .nav-link:last-of-type {
-    height: 100vh;
-  }
   
-  #main-doc {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 30px 20px 330px;
-  }
-
   p, li {
     font-size: 16px;
     padding: 10px 0px 10px 0px;
@@ -68,39 +38,137 @@ body {
     margin-bottom: 10px;
   }
   
-  .documentation {
+  #documentation {
     color: black;
     padding: 10px 0 10px 30px;
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .code {
+    background-color: #F0F0F0		;
+    padding: 30px 0 30px 30px;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 30px;
+    color: #696969;
+  }
+  
+   .mdn {
+    color: blue;
+    text-decoration: underline;
+   }   
+
+  /* Responsive */
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    border-right: solid rgba(0,22,22,0.4);
+  }
+
+  #navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  #navbar li {
+    position: relative;
+    width: 100%;
   }
 
 
-    @media (prefers-reduced-motion: no-preference) {
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+
+}
+
+  .nav-link {
+    display: block;
+    padding: 15px;
+    padding-left: 30px;
+    border-bottom: 2px solid grey;
+    font-size: 16px;
+    font-weight: 300;
+    color: #686868;
+  }
+
+  #main-doc {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+  }
+
+  /* MEDIA QUERIES */
+
+  @media (prefers-reduced-motion: no-preference) {
       * {
         scroll-behavior: smooth;
       }
     }
   
-    .code {
-      background-color: #F0F0F0		;
-      padding: 30px 0 30px 30px;
-      border-radius: 10px;
-      font-size: 14px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      width: 80%;
-      margin-left: 30px;
-      color: #696969;
+    @media only screen and (max-width: 815px) {
+      /* For mobile phones: */
+      #navbar ul {
+        border: 1px solid;
+        height: 207px;
+      }
+    
+      #navbar {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        z-index: 1;
+      }
+    
+      #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 600px;
+      }
+      header {
+        margin-left: 10px;
+      }  
+      .code {
+        width: 90%;
+        margin-left: 15px;
+      }
+      section {
+        width: 100%;
+        height: 100%;
+      }
+      p, li {
+        overflow-wrap: break-word;
+        word-break: break-word;
+        hyphens: auto;
+      }
     }
-
- .mdn {
-  color: blue;
-  text-decoration: underline;
- }   
-
- @media (max-width: 767px) {
+ @media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+}
+code {
+  margin-left: -20px;
+  width: 100%;
+  padding: 15px;
+  padding-left: 10px;
+  padding-right: 45px;
+  min-width: 233px;
+}
 
 }
- /* TO DO
- Make Nav Responsive
- Media query display flex column all the body when width less than x
+
