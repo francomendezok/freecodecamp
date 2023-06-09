@@ -139,24 +139,52 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 120px;
+    margin: auto;
+    width: 95%;
+    padding: 100px 0;
   }
 
   .price-option {
     width: 30%;
     height: 60vh;
     text-align: center;
+    border: 1px solid black;
   }
 
   .price-header {
     font-size: 1.5rem;
+    padding: 20px;
+    background-color: #B2BEB5;
+  }
+
+  .price-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .price-wrapper h2 {
+    margin-top: 1.3rem;
+    font-size: 2.5rem;
+  }
+
+  .price-wrapper p {
+    font-size: 2.0rem;
+    margin-top: 1rem;
   }
 
   #select-button {
     color: black;
     background-color: yellow;
-    padding: 1rem;
+    padding: 5px;
+    width: 40%;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 1.7px;
   }
+
+  /* WHEN I ZOOM OUT, EVERYTHING SHRINKS. I NEED THEM TO STAY THE SAME SIZE /*
+
+
 /* FOOTER */
   footer {
     display: flex;
