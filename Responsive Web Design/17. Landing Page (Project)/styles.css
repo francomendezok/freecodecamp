@@ -153,8 +153,9 @@ header {
 
   .price-header {
     font-size: 1.5rem;
+    font-weight: bold;
     padding: 20px;
-    background-color: #B2BEB5;
+    background-color: #ddd;
   }
 
   .price-wrapper {
@@ -165,11 +166,13 @@ header {
   .price-wrapper h2 {
     margin-top: 1.3rem;
     font-size: 2.5rem;
+    margin-bottom: 1vh;
   }
 
   .price-wrapper p {
     font-size: 2.0rem;
     margin-top: 1rem;
+    margin-bottom: 8%;
   }
 
   #select-button {
@@ -191,7 +194,7 @@ header {
     flex-direction: column;
     padding: 20px;
     font-size: 2rem;
-    background-color: grey;
+    background-color: #ddd;
   }
   
   .bottom {
