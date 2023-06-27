@@ -252,7 +252,7 @@ footer {
     
     ul {
         font-size: 150%;
-        width: 40%;
+        width: 90%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -281,21 +281,23 @@ footer {
         flex-direction: column;
         align-items: center;
         background-color: #0891b2;
-        height: 400vh;
+        height: 600vh;
     }
     
     #projects > h2 {
         margin-top: 2%;
         margin-bottom: 2%;
         text-align: center;
+        font-size: 200%;
     }
     
     .container {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         width: 90%;
-        height: 90%;
-        gap: 3%;
+        height: 100%;
+        border: 4px solid red;
     }
     
     .project-tile {
@@ -306,7 +308,7 @@ footer {
         border-radius: 12px;
         display: flex;
         flex-direction: column;
-        align-self: center;
+        align-self: flex-end;
         margin: auto;
     }
     
@@ -341,11 +343,12 @@ footer {
     
     #contact h2 {
         font-weight: bold;
-        font-size: 300%;
+        font-size: 200%;
+        text-align: center;
     }
     
     #contact h5 {
-        font-size: 150%;
+        font-size: 100%;
     }
     
     .text {
@@ -370,7 +373,7 @@ footer {
     
     .icon p {
         margin-left: 10%;
-        font-size: 150%;
+        font-size: 100%;
         text-align: center;
     }
     
