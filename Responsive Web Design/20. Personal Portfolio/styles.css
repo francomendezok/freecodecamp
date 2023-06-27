@@ -150,7 +150,57 @@ img {
     justify-content: center;
     align-items: center;
     background-color: #3f3f46;
+    height: 80vh;
     border-bottom: 5px solid #ef4444;
+}
+
+#contact h2 {
+    font-weight: bold;
+    font-size: 400%;
+}
+
+#contact h5 {
+    font-size: 200%;
+}
+
+.text {
+    margin-bottom: 5%;
+}
+
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10%;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon p {
+    margin-left: 10%;
+    font-size: 200%;
+}
+
+svg {
+    color: white;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.icon a {
+    display: flex;
+    align-items: center;
+}
+
+.icon a:hover {
+    color: white;
 }
 
 footer {
