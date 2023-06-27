@@ -63,7 +63,7 @@ h5 {
 
 #navbar {
     position: fixed;
-    background-color: #ef4444;
+    background-color: #5b21b6;
     width: 100vw;
     height: 8%;
     display: flex;
@@ -84,7 +84,7 @@ a {
 }
 
 a:hover {
-    color: hsl(227, 59%, 51%);
+    color: white;
 }
 
 #welcome-section {
@@ -93,18 +93,19 @@ a:hover {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #3f3f46;
+    background-color: #020617;
 }
 
 #projects {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #0891b2;
+    background-color: #e2e8f0;
     height: 200vh;
 }
 
 #projects > h2 {
+    color: #020617;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -118,7 +119,7 @@ a:hover {
 }
 
 .project-tile {
-    background-color: hsl(227, 59%, 51%);
+    background-color: #5b21b6;
     border: 3px solid black;
     width: 30%;
     height: 30%;
@@ -153,9 +154,9 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #3f3f46;
+    background-color: #020617;
     height: 80vh;
-    border-bottom: 5px solid #ef4444;
+    border-bottom: 3px solid grey;
 }
 
 #contact h2 {
@@ -212,7 +213,7 @@ footer {
     justify-content: space-evenly;
     align-items: center;
     height: 5vh;
-    background-color: #3f3f46;
+    background-color: #020617;
 }
 
 @media (max-width: 768px) {
@@ -243,7 +244,7 @@ footer {
     
     #navbar {
         position: fixed;
-        background-color: #ef4444;
+        background-color: #5b21b6;
         width: 100vw;
         height: 10%;
         display: flex;
@@ -273,14 +274,14 @@ footer {
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-color: #3f3f46;
+        background-color: #020617;
     }
     
     #projects {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #0891b2;
+        background-color: #e2e8f0;
         height: 400vh;
     }
     
@@ -300,7 +301,7 @@ footer {
     }
     
     .project-tile {
-        background-color: hsl(227, 59%, 51%);
+        background-color: #5b21b6;
         border: 3px solid black;
         width: 80%;
         height: 8%;
@@ -333,9 +334,9 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: #3f3f46;
+        background-color: #020617;
         height: 50vh;
-        border-bottom: 5px solid #ef4444;
+        border-bottom: 3px solid grey;
     }
     
     #contact h2 {
@@ -398,9 +399,10 @@ footer {
         justify-content: space-evenly;
         align-items: center;
         height: 5vh;
-        background-color: #3f3f46;
-        font-size: 120%;
-        padding: 3%;
+        background-color: #020617;
+        font-size: 100%;
+        padding-bottom: 3%;
+        text-align: center;
     }
 
 }
