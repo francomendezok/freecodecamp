@@ -247,12 +247,12 @@ footer {
         width: 100vw;
         height: 10%;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
     }
     
     ul {
         font-size: 150%;
-        width: 30%;
+        width: 40%;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -281,17 +281,18 @@ footer {
         flex-direction: column;
         align-items: center;
         background-color: #0891b2;
-        height: 200vh;
+        height: 400vh;
     }
     
     #projects > h2 {
         margin-top: 2%;
         margin-bottom: 2%;
+        text-align: center;
     }
     
     .container {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 90%;
         height: 90%;
         gap: 3%;
@@ -300,8 +301,8 @@ footer {
     .project-tile {
         background-color: hsl(227, 59%, 51%);
         border: 3px solid black;
-        width: 30%;
-        height: 30%;
+        width: 80%;
+        height: 10%;
         border-radius: 12px;
         display: flex;
         flex-direction: column;
@@ -334,17 +335,17 @@ footer {
         justify-content: center;
         align-items: center;
         background-color: #3f3f46;
-        height: 80vh;
+        height: 50vh;
         border-bottom: 5px solid #ef4444;
     }
     
     #contact h2 {
         font-weight: bold;
-        font-size: 400%;
+        font-size: 300%;
     }
     
     #contact h5 {
-        font-size: 200%;
+        font-size: 150%;
     }
     
     .text {
@@ -354,18 +355,23 @@ footer {
     
     .social-media {
         display: flex;
-        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 10%;
+        width: 80%;
     }
     
     .icon {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
     }
     
     .icon p {
         margin-left: 10%;
-        font-size: 200%;
+        font-size: 150%;
+        text-align: center;
     }
     
     svg {
@@ -393,6 +399,7 @@ footer {
         align-items: center;
         height: 5vh;
         background-color: #3f3f46;
+        font-size: 120%;
     }
 
 }
