@@ -281,7 +281,7 @@ footer {
         flex-direction: column;
         align-items: center;
         background-color: #0891b2;
-        height: 600vh;
+        height: 400vh;
     }
     
     #projects > h2 {
@@ -303,15 +303,13 @@ footer {
     .project-tile {
         background-color: hsl(227, 59%, 51%);
         border: 3px solid black;
-        width: 80%;
-        height: 10%;
+        width: 50%;
+        height: 8%;
         border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        align-self: flex-end;
-        margin: auto;
     }
-    
+
+
+
     .project-tile a {
         width: 100%;
         height: 95%;
@@ -327,7 +325,7 @@ footer {
     img {
         border-radius: 12px 12px 0 0;
         width: 100%;
-        height: 95%;
+        height: 90%;
     }
     
     
